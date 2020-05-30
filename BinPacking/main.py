@@ -3,7 +3,10 @@ from BinPacking.view.view import View
 
 def main():
     view = View()
-    print(view.get_items(view))
+
+    items = view.get_items(view)
+
+    view.pack_items(view, items)
 
 
 if __name__ == "__main__":
