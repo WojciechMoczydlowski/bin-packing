@@ -18,8 +18,8 @@ Program includes two algorithms:
 2) Best fit algorithm approximates brutal algorithm.It is not accurate, but quite fast.
 
 ## Project structure
-Project is divided into two parts:
 1) algorithms: this part includes two algorithms: brutal and first fit.
 2) view: this part includes View class which manages displaying results.
 3) dataController: this part includes DataController class which manages input data.
+4) test: this part includes unitTests and tests for computational complexity  
 
