@@ -36,3 +36,13 @@ class DataController:
 
         return items
 
+    @staticmethod
+    def rand_items_for_complexity(items_amount):
+        items = []
+
+        for i in range(items_amount):
+            item = random.random()
+            items.append(item)
+
+        return items
+
