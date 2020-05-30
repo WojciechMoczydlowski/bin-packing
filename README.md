@@ -17,8 +17,8 @@ Program includes two algorithms:
 1) Brutal algorithm computes necessary boxes using all permutations of items. This algorithm is accurate, but totally slow.
 2) Best fit algorithm approximates brutal algorithm.It is not accurate, but quite fast.
 
-## Files
+## Project structre
 Project is divied into two parts:
 1) Algorithms: this part includes two algoritms: brutal and first fit. 
-2) View: tihs  class manages input and output data.
+2) View: this class manages input and output data.
 
