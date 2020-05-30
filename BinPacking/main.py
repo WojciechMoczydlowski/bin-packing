@@ -1,7 +1,9 @@
+from BinPacking.view.view import View
 
 
 def main():
-    print("I am working")
+    view = View()
+    print(view.get_items(view))
 
 
 if __name__ == "__main__":
