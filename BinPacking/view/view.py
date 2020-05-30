@@ -1,31 +1,38 @@
 # Wojciech Moczydlowski bin packing problem
 
+import math
 from BinPacking.utils.utils import get_input_from_range
-from BinPacking.algorithms.brutal_bin_packing import brutal_bin_packing
-from BinPacking.algorithms.first_fit_bin_packing import first_fit_bin_packing
-from BinPacking.dataController.data import DataController
+
+
+
 
 
 class View:
 
-    def __init__(self):
-        self.dataController = DataController()
 
     @staticmethod
     def display_welcome_screen():
         print("This is bin packing problem\n")
 
     @staticmethod
-    def get_items(self):
-        print("Choose method of uploading dataController:")
-        print("1. Get dataController from console")
-        print("2. Test for amount of random dataController")
-        current_input = get_input_from_range(1, 2)
+    def get_test_type():
+        print("Choose testing method")
+        print("1. Test for data from console")
+        print("2. Test for amount of random data")
+        print("3. Automatic test for computational complexity")
+        test_type = get_input_from_range(1, 3)
 
-        if current_input == 1:
-            return self.dataController.get_items_from_console()
-        if current_input == 2:
-            return self.dataController.rand_items()
+        return test_type
+
+    @staticmethod
+    def get_algorithm_type():
+        print("Choose algorithm for testing")
+        print("1. Brutal algorithm")
+        print("2. First algorithm")
+        print("3. Both algorithms")
+        algorithm_type = get_input_from_range(1, 3)
+
+        return algorithm_type
 
     @staticmethod
     def print_result(result):
@@ -35,21 +42,5 @@ class View:
         print(f"Minimal boxes amount: {result.boxes}\n")
 
     @staticmethod
-    def pack_items(self, items):
-        print("Choose algorithm:")
-        print("1. Brutal algorithm")
-        print("2. First algorithm")
-        print("3. Both algorithms")
-        current_input = get_input_from_range(1, 3)
-
-        if current_input == 1:
-            print("1. Brutal algorithm is computing")
-            self.print_result(brutal_bin_packing(items))
-        if current_input == 2:
-            print("1. First fit algorithm is computing")
-            self.print_result(first_fit_bin_packing(items))
-        if current_input == 3:
-            print("1. Brutal algorithm is computing")
-            self.print_result(brutal_bin_packing(items))
-            print("1. First fit algorithm is computing")
-            self.print_result(first_fit_bin_packing(items))
+    def print_complexity_results( items, time, q):
+        print(f"{items} {time} {q}")
