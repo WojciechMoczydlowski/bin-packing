@@ -22,7 +22,7 @@ def brutal_bin_packing(items):
 
     algorithm_time = algorithm_end - algorithm_start
 
-    result = AlgorithmResult("brutal bin packing", len(items), minimal_boxes_amount, algorithm_time)
+    result = AlgorithmResult("brutal algorithm", len(items), minimal_boxes_amount, algorithm_time)
 
     return result
 
