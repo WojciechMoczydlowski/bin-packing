@@ -1,4 +1,4 @@
-# bin packing problem
+# Bin packing problem
 
 ## Author
 Wojciech Moczydłowski 296258
