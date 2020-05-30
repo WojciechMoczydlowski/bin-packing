@@ -18,5 +18,7 @@ Program includes two algorithms:
 2) Best fit algorithm approximates brutal algorithm.It is not accurate, but quite fast.
 
 ## Files
-Project is divied into two parts. First one is algoritms.This part includes two algoritms: brutal and first fit. Second one is view.View class manages input and output data.
+Project is divied into two parts:
+1) Algorithms: this part includes two algoritms: brutal and first fit. 
+2) View: tihs  class manages input and output data.
 
