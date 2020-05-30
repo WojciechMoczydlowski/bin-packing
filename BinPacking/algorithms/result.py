@@ -1,4 +1,4 @@
-
+# Wojciech Moczydlowski bin packing problem
 
 class AlgorithmResult:
 

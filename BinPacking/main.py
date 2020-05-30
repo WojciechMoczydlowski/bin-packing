@@ -1,3 +1,5 @@
+# Wojciech Moczydlowski bin packing problem
+
 from BinPacking.view.view import View
 
 

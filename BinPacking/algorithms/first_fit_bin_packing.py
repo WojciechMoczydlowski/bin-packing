@@ -1,3 +1,5 @@
+# Wojciech Moczydlowski bin packing problem
+
 import time
 
 from BinPacking.algorithms.result import AlgorithmResult

@@ -1,3 +1,5 @@
+# Wojciech Moczydlowski bin packing problem
+
 def get_input_from_range(lower_number, higher_number):
     if lower_number > higher_number:
         raise Exception

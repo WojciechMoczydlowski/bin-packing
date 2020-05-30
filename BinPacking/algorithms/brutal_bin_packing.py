@@ -1,3 +1,5 @@
+# Wojciech Moczydlowski bin packing problem
+
 import itertools
 import math
 import time

@@ -1,3 +1,5 @@
+# Wojciech Moczydlowski bin packing problem
+
 import unittest
 
 from BinPacking.algorithms.brutal_bin_packing import boxes_amount_for_permutation

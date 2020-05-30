@@ -1,57 +1,31 @@
-import random
+# Wojciech Moczydlowski bin packing problem
 
 from BinPacking.utils.utils import get_input_from_range
 from BinPacking.algorithms.brutal_bin_packing import brutal_bin_packing
 from BinPacking.algorithms.first_fit_bin_packing import first_fit_bin_packing
+from BinPacking.dataController.data import DataController
+
 
 class View:
+
+    def __init__(self):
+        self.dataController = DataController()
+
     @staticmethod
     def display_welcome_screen():
         print("This is bin packing problem\n")
 
     @staticmethod
-    def get_items_from_console():
-        print("Enter number of items: ")
-        number_of_items = int(input())
-
-        items = []
-        for i in range(number_of_items):
-            print(f"Enter {i + 1} item: ")
-            item = float(input())
-
-            while item <= 0 or item > 1:
-                print(f"Invalid value.Enter {i + 1} item again: ")
-                item = float(input())
-
-            items.append(item)
-
-        return items
-
-    @staticmethod
-    def random_items():
-        random.seed()
-        print("Enter number of items: ")
-        number_of_items = int(input())
-
-        items = []
-
-        for i in range(number_of_items):
-            item = random.random()
-            items.append(item)
-
-        return items
-
-    @staticmethod
     def get_items(self):
-        print("Choose method of uploading data:")
-        print("1. Get data from console")
-        print("2. Test for amount of random data")
+        print("Choose method of uploading dataController:")
+        print("1. Get dataController from console")
+        print("2. Test for amount of random dataController")
         current_input = get_input_from_range(1, 2)
 
         if current_input == 1:
-            return self.get_items_from_console()
+            return self.dataController.get_items_from_console()
         if current_input == 2:
-            return self.random_items()
+            return self.dataController.rand_items()
 
     @staticmethod
     def print_result(result):
